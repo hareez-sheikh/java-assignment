@@ -12,10 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
 </head>
 <style>
-    .navbar{
+      .navbar{
     width: 100%;
     background-color:#A5D7E8;
     height: 85px;
@@ -59,19 +58,14 @@
         background-color:#0B2447;
         color: #A5D7E8;
     }
-    *{
-        margin: 0%;
-        padding: 0%;
-   
-
+    #head1{
+        font-family: 'Pacifico', cursive;
+        background-color:#0B2447;
+        color: #A5D7E8;
     }
     .headfull{
         border: 2px solid #19376D;
    
-    }
-    .input1{
-        border: 2px solid #576CBC;
-        font-family: 'Poppins', sans-serif;
     }
     .butt{
         background-color:   #42518e;
@@ -85,7 +79,7 @@
     }
     .navbar ul li :hover {
     
-        background-color: rgb(87, 144, 224);
+    background-color: rgb(87, 144, 224);
 }
 </style>
 <body>
@@ -106,44 +100,25 @@
       <br>
       <br>
       <br>
-    <div class="container headfull">
-       <center> <h1 id="head1">Lets make todos</h1></center>
-       <br>
-
-<div class="row">
-    <div class="col-md-9">
-        <input type="text" placeholder="Enter Your Todo" class="form-control input1" id="writetodo">
-    </div>
-    <div class="col-md-3">
-        <button class="butt  form-control" onclick="todofunc()">Add</button>
-    </div>
-<br>
-<br>
-<br>
-
-    <div class="list1">
-        <ul id="list">
-           
-        </ul>
-    </div>
-
-</div>
-    </div>
-
-
-    <script>
- function todofunc(){
-            var newtodo = document.getElementById("writetodo") 
-            var todo = document.getElementById("list")
-            var listtodo = document.createElement("li")
-
-            listtodo.innerText = newtodo.value;
-            todo.appendChild(listtodo);
-    
-
-        }
-    
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <div class="container headfull">
+        <center> <h1 id="head1">Lets Learn Tables</h1></center>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="First Number">First Number</label>
+                <br>
+                <input id="start" type="number" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="Second Number">Second Number</label>
+                <br>
+                <input id="end" type="number" class="form-control" >
+            </div>
+            
+            <div class="col-md-12">
+                <br>
+                <button class="form-control butt">Genrate Table</button>
+            </div>
+        </div>
+      </div>
 </body>
 </html>
