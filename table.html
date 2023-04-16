@@ -103,22 +103,49 @@
       <div class="container headfull">
         <center> <h1 id="head1">Lets Learn Tables</h1></center>
         <div class="row">
-            <div class="col-md-6">
-                <label for="First Number">First Number</label>
+            <div class="col-md-4">
+                <label for="First Number">Table of</label>
                 <br>
-                <input id="start" type="number" class="form-control">
+                <input id="num1" type="number" class="form-control">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <label for="Second Number">First Number</label>
+                <br>
+                <input id="start" type="number" class="form-control" >
+            </div>
+            
+            <div class="col-md-4">
                 <label for="Second Number">Second Number</label>
                 <br>
                 <input id="end" type="number" class="form-control" >
             </div>
-            
+            <!-- <div class="col-md-12">
+                <table>
+                    <tr>
+                        <td id="first"></td>
+                        <td id="sec"></td>
+                        <td id="third"></td>
+                    </tr>
+                </table>
+            </div> -->
             <div class="col-md-12">
                 <br>
-                <button class="form-control butt">Genrate Table</button>
+                <button class="form-control butt" onclick="soo()">Genrate Table</button>
             </div>
         </div>
       </div>
+
+      <script>
+        function soo(){
+          var num1 = document.getElementById("num1").value  
+          var start = document.getElementById("start").value  
+          var end = document.getElementById("end").value 
+
+          for(var i= start ; i<=end ; i++);{
+          document.write(num1+"x"+i+"="+num1*i);
+          document.write("<br>")
+        }
+        }
+      </script>
 </body>
 </html>

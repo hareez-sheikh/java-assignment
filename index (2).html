@@ -57,7 +57,7 @@ for(var i=a ; i<c ;b++ ){
 
 </script>
 </body>
-</html> -->
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,4 +79,159 @@ for(var i=a ; i<c ;b++ ){
     
 </body>
 </html>
-
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+             overflow-x: hidden;
+ 
+         }
+ 
+         .btn {
+             background-color: #8281a1;
+             color: #fff;
+         }
+ 
+         .nav-link {
+             color: #2b2964 !important;
+             font-size: 15PX !important;
+             font-weight: boldER !important;
+         }
+ 
+         .nav-link:hover {
+             color: #fff !important;
+         }
+ 
+         .navbar {
+             background-color: #8281a1;
+             color: #fff !important;
+         }
+ 
+         body {
+ 
+             background-repeat: no-repeat;
+             background-image: url(https://img.freepik.com/free-vector/background-pixel-rain-abstract_23-2148374569.jpg?w=740&t=st=1681042151~exp=1681042751~hmac=4487fa41ce919b9dd168b138f2a4e4084e577fc70ad450c19ba94c83fda0db94);
+             background-repeat: no-repeat;
+             background-size: 100%;
+             background-attachment: fixed;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <!-- navbar work started -->
+     <nav class="navbar navbar-expand-lg ">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="#"><img src="maryumlogo_2-removebg-preview.png" alt="" height="80px"
+                     width="200px"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                 <div class="navbar-nav mx-auto">
+                     <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                     <a class="nav-link active" href="todolist.html">Todolist</a>
+                     <a class="nav-link active" href="table.html">Table</a>
+                     <a class="nav-link active" href="home.html">Marksheet</a>
+                     <a class="nav-link active" href="">Product search bar</a>
+ 
+                 </div>
+             </div>
+         </div>
+     </nav>
+ 
+ 
+ 
+     <!-- navbar working ended -->
+ 
+     <br><br><br><br><br>
+     <div class="container">
+         <center><h1 style="color: #FFF; font-family:Arial, Helvetica, sans-serif ;">LETS MAKE A TABLE</h1></center>
+         <div class="row">
+ 
+             <div class="col-md-4">
+                 <center><input type="number" class="form-control" id="first_number" placeholder="Enter a Start number "></center>
+ 
+             </div>
+ 
+             <div class="col-md-4">
+                 <center><input mode="number" class="form-control" id="second_number" placeholder="Enter a End number"></center>
+ 
+             </div>
+             <div class="col-md-4">
+                 <center><input type="number" class="form-control" id="table" placeholder="Enter a Table Number"></center>
+ 
+             </div>
+ 
+ 
+ 
+         </div>
+     </div>
+     <div class="container">
+ 
+ 
+         <button class="btn form-control" onclick="tablerun()">generate a table</button>
+     </div>
+ 
+ 
+     <script>
+ 
+       
+ 
+ function tablerun() {
+        var table = document.getElementById("table").value;
+         var first_number= document.getElementById("first_number").value;
+         var second_number = document.getElementById("second_number").value;
+        
+ 
+ 
+     console.log(table);
+     console.log(first_number);
+     console.log(second_number);
+ 
+ 
+ 
+     for(var i = first_number; i<=second_number; i++){
+ 
+ 
+     
+         document.write(table +"X"+ i + "=" +table*i );
+         document.write("<br>")
+ 
+     }
+ 
+ 
+ 
+ 
+ }
+ 
+     </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+         crossorigin="anonymous"></script>
+ </body>
+ 
+ </html>
